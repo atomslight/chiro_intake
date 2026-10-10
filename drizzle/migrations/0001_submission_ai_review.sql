@@ -1,0 +1,2 @@
+ALTER TABLE public.submissions ADD COLUMN IF NOT EXISTS ai_findings jsonb, ADD COLUMN IF NOT EXISTS ai_error text, ADD COLUMN IF NOT EXISTS story jsonb;
+ALTER TABLE public.submissions ALTER COLUMN report_status SET DEFAULT 'pending';
